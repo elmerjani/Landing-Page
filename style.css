@@ -119,3 +119,84 @@ main h1{
     font-size: 18px;
     
 }
+/* Styling block-level quotes */
+blockquote {
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+    margin: 60px 40px;
+    padding: 10px 20px;
+    border-left: 5px solid #ccc;
+    background-color: #E5E7EB;
+  }
+  
+  /* Styling the citation in blockquote */
+  blockquote cite {
+    display: block;
+    text-align: right;
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  /* Styling inline quotes */
+
+  
+  /* Changing quote marks for blockquotes */
+  blockquote p:before {
+    content: open-quote;
+    font-size: 36px;
+    vertical-align: top;
+  }
+  
+  blockquote p:after {
+    content: close-quote;
+    font-size: 36px;
+    vertical-align: bottom;
+  }
+  .sign-up{
+    display: flex;
+    background-color: #3882f6;
+    border-radius: 8px;
+    max-width: 800px;
+    padding: 24px 60px;
+    margin: 60px auto;
+    color: #F9FAF8;
+  }
+  .sign-up .text{
+    width: 70%;
+  }
+  .sign-up .sign-up-button{
+    width: 30%;
+  }
+  .sign-up-button button{
+   
+    background: transparent;
+    color: #F9FAF8;
+    border: 1px solid #F9FAF8;
+    font-weight: bold;
+  
+    border-radius: 8px;
+    font-size:16px ;
+    padding: 8px 25px;
+    cursor: pointer;
+}
+.sign-up-button button:hover{
+    background-color:#F9FAF8 ;
+    color: #3882f6;
+}
+.sign-up-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-blue);
+    height: 50px;
+    
+    color: #F9FAF8;
+} 
