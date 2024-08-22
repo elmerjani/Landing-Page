@@ -48,7 +48,7 @@ header .header h2{
 .header a:hover,
 .header a:focus{
     text-decoration: underline;
-    text-shadow: 0 0 2px white;
+    text-shadow: 0 0 3px  white;
 }
 .mobile-links li{
     display: none;
