@@ -1,21 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
 *{
     --dark-blue:#1f2937;
-    
+    font-family: "Figtree";    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 header{
     background-color: var(--dark-blue);
-    /* height: 500px; */
+    padding: 40px 40px 60px 40px;
+  
     
     
 }
 header .header{
     display:flex;
-    flex-flow: row wrap;
+    align-items: center;
     justify-content: space-between;
-    padding: 30px 40px;
+    margin-bottom: 32px;    
 }
 
 header .header h2{
@@ -23,10 +26,16 @@ header .header h2{
     font-size: 24px;
 
 }
-.header nav{
+
+.header nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     gap: 20px;
 }
+
+
 .header a,
 .main p{
     color: #E5E7EB;
@@ -41,9 +50,15 @@ header .header h2{
     text-decoration: underline;
     text-shadow: 0 0 2px white;
 }
+.mobile-links li{
+    display: none;
+}
+.links li{
+    font-weight: 500;
+    font-size: 18px;
+}
 .main{
     display: flex;
-     
     justify-content: space-between ;
 }
 
@@ -51,11 +66,10 @@ header .header h2{
 .main h1{
     color: #F9FAF8;
     font-size: 48px;
+    margin-bottom: 8px;
     
 }
-.main{
-    padding: 40px;
-}
+
 .main .image{
     display: flex;
     justify-content: flex-end;
@@ -74,19 +88,21 @@ header .header h2{
     font-weight: bold;
     color:#F9FAF8 ;
     border-radius: 8px;
-    font-size:16px ;
-    padding: 8px 25px;
-    margin-top: 10px;
+    font-size:18px ;
+    
+    margin-top: 16px;
     border: none;
+    width: 120px;
+    height: 40px;
     background-color: #2882F6;
     cursor: pointer;
 }
 .animes{
     display: flex;
-    gap: 20px;
-    padding: 0 40px;
+    
+    gap: 44px;
     justify-content: center;
-    line-height: 1.5;
+    flex-wrap: wrap;
     
 }
 
@@ -98,99 +114,87 @@ main h1{
     margin: 24px 0;
 }
 .anime-carte{
-    width: 300px;
+    width: 320px;
+    border: 1px solid black;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 10px 10px 0 black;
+    border-radius: 20px;
 }
 .anime-carte img{
-    display: block;
-    width: 100%;
+    width: 300px;
     height: 300px;
-    border-radius: 8px;
-    border: 2px solid #2882F6;
+    border-radius: 12px;
 }
 .anime-carte h2{
-    margin: 10px 0;
-    text-align: center;
-    text-shadow: 0px 2px 2px #000;
+    font-weight: 800;
+    margin: 16px 0 4px 0;
+    text-shadow: 1px 1px 1px black;
+    font-size: 28px;
 
     
 }
 .anime-carte p{
-    text-align: center;
-    font-size: 18px;
+    color: hsl(0, 0%, 40%);
     
 }
-/* Styling block-level quotes */
+
 blockquote {
     font-size: 36px;
     font-style: italic;
     color: #1f2937;
-    margin: 60px 40px;
-    padding: 10px 20px;
+    margin: 40px 40px;
+    padding: 12px 20px;
     border-left: 5px solid #ccc;
     background-color: #E5E7EB;
-  }
-  
-  /* Styling the citation in blockquote */
-  blockquote cite {
+}
+
+blockquote cite {
     display: block;
     text-align: right;
     font-size: 1.2rem;
     color: #333;
     margin-top: 10px;
-  }
+}
   
-  /* Styling inline quotes */
 
-  
-  /* Changing quote marks for blockquotes */
-  blockquote p:before {
-    content: open-quote;
-    font-size: 36px;
-    vertical-align: top;
-  }
-  
-  blockquote p:after {
-    content: close-quote;
-    font-size: 36px;
-    vertical-align: bottom;
-  }
-  .sign-up{
+.sign-up{
+    
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     background-color: #3882f6;
+    width: min(100%,800px);
+    margin: 40px auto;
+    padding: 24px;
+   /*  height: 100px; */
+    color: #F9FAF8;
     border-radius: 8px;
-    max-width: 800px;
-    padding: 24px 60px;
-    margin: 60px auto;
+}
+.sign-up-button button{
+
+    background-color: #3882f6;
     color: #F9FAF8;
-  }
-  .sign-up .text{
-    width: 70%;
-  }
-  .sign-up .sign-up-button{
-    width: 30%;
-  }
-  .sign-up-button button{
-   
-    background: transparent;
-    color: #F9FAF8;
-    border: 1px solid #F9FAF8;
-    font-weight: bold;
-  
+    border: 2px solid #F9FAF8;
+    font-weight: 500;
+
     border-radius: 8px;
     font-size:16px ;
-    padding: 8px 25px;
+    width: 100px;
+    height: 40px;
+    
     cursor: pointer;
 }
 .sign-up-button button:hover{
     background-color:#F9FAF8 ;
     color: #3882f6;
 }
-.sign-up-button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+.sign-up p{
+    color: rgb(230, 229, 229);
 }
+
 footer{
     display: flex;
     justify-content: center;
@@ -200,3 +204,46 @@ footer{
     
     color: #F9FAF8;
 } 
+@media (max-width: 768px) {
+    .image img{
+        display: none;
+    }
+    .animes{
+        flex-wrap: wrap;
+    }
+    blockquote{
+        font-size: 24px;
+        
+    }
+    
+}
+@media (max-width:480px){
+    .sign-up{
+        border-radius: 0px;
+        padding: 16px;
+        flex-wrap: wrap;
+    }
+    .sign-up button{
+        margin-top: 16px;
+    }
+    header{
+        padding: 16px;
+    }
+    
+    header .header h2{
+        color: #F9FAF8;
+        font-size: 28px;
+
+    }
+    .links li{
+        display: none;
+    }
+    .mobile-links li{
+        display: block;
+    }
+   
+    
+    
+    
+
+}
